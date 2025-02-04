@@ -1,0 +1,16 @@
+.color-main {
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(#ff0000, #0000ff, #008000);
+}
+.color-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+}

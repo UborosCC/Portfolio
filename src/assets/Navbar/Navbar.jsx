@@ -1,29 +1,31 @@
-import { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleTheme } from '../../redux/themeSlice';
-import { Link } from 'react-router-dom';
-import './Navbar.css'
+import { useEffect, useState } from 'react'; //importerar useState och useEffect, useState hanterar state variabler, useEffect kör sid effekter
+import { useSelector, useDispatch } from 'react-redux'; //importerar useSelector och useDispatch
+import { Link } from 'react-router-dom'; //importerar Link
+import { toggleTheme } from '../../redux/ThemeSlice'; //importerar toggleTheme
+import './Navbar.css' //importerar Navbar.css
 import sunIcon from '../images/sun.png';
-import moonIcon from '../images/moon.png';
+import moonIcon from '../images/moon.png'; //importerar sunIcon och moonIcon
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
-    const theme = useSelector((state) => state.theme.theme);
-    const dispatch = useDispatch();
+    const [isOpen, setIsOpen] = useState(false); //Används för att hålla koll om något är öppet eller inte, useState(false) eftersom den ska börja stängd
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768); //Håller koll om skärmen är minst 768px på width
+    const theme = useSelector((state) => state.theme.theme); //Hämtar theme från Redux
+    const dispatch = useDispatch(); //Används för att växla mellan 'light' och 'dark' theme
 
+    //Byter data-theme till 'light' eller 'dark' beroende på vilken den har växlat till
     useEffect(() => {
         document.documentElement.setAttribute('data-theme', theme);
     }, [theme],);
     
+    //Håller koll om skärmen ändrar storlek
     useEffect(() => {
         const handleRezise = () => {
             setIsDesktop(window.innerWidth >= 768);
         };
 
         window.addEventListener('resize', handleRezise);
-        return () => window.removeEventListener('resize', handleRezise);
+        return () => window.removeEventListener('resize', handleRezise); //tar bort EventListener för att hindra minnesläckor
     }, []);
 
     return (

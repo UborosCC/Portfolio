@@ -1,0 +1,72 @@
+.back-button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    font-size: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    border-bottom-right-radius: 5px;
+}
+.back-button:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+.greeting-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+.greeting-box, .greeting-navbox {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: #000000 10px 15px 20px 10px;
+}
+.greeting-box {
+    margin-bottom: 50px;
+    font-size: 5vw;
+}
+.greeting-navbox {
+    font-size: 3vw;
+}
+.greeting-ul {
+    margin: 20px;
+}
+.greeting-list {
+    list-style: circle;
+}
+.greeting-link {
+    cursor: pointer;
+    color: #ffffff;
+    background: none;
+    vertical-align: middle;
+    font-size: 5vw;
+    border: none;
+    text-decoration: none;
+}
+.greeting-link:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+.greeting-box h1 {
+    margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .greeting-link, .greeting-h2 {
+        font-size: 2vw;
+    }
+    .greeting-h2 {
+        text-decoration: dotted underline #ffffff;
+    }
+}

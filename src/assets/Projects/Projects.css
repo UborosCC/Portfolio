@@ -1,0 +1,13 @@
+.project-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: var(--text-color);
+    font-size: 4vw;
+    border-radius: 10px;
+    padding: 10px;
+}
+.project-links:hover {
+    color: #0051ff;
+    background-color: var(--text-color);
+}

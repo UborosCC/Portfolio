@@ -1,0 +1,33 @@
+.color-h1 {
+    margin: 2rem;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 45px;
+    border: var(--text-color) double 5px;
+    border-radius: 4px;
+}
+.color-button {
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 10vw;
+    border: var(--text-color) double 5px;
+    border-radius: 4px;
+}
+.color-button:hover {
+    background-color: #0d6621;
+    color: #ffffff;
+    border-color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .color-h1 {
+        margin: 3rem 1rem 1rem 1rem;
+        font-size: 50px;
+    }
+    .color-button {
+        font-size: 1vw;
+    }
+}

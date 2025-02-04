@@ -1,0 +1,44 @@
+.timer-main {
+    display: flex;
+    background-image: linear-gradient(#000000, #24246d, #000000);
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.timer {
+    cursor: default;
+    margin: 50px;
+    font-size: 8vw;
+    color: #000000;
+}
+.timer, .start-button, .pause-button, .reset-button {
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: var(--text-color) double 1vw;
+    border-radius: 5px;
+    animation: rainbow 10s linear infinite;
+}
+.start-button, .pause-button, .reset-button {
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: 4vw;
+    transition: 0.5s ease-out;
+}
+.start-button:hover, .pause-button:hover, .reset-button:hover {
+    transform: scale(1.1);
+    color: #0051ff;
+    border-color: #0051ff;
+    background-color: var(--glass-color);
+}
+@keyframes rainbow {
+    0% { box-shadow: #ff0000 8px 6px 5px; }
+    14% { box-shadow: #ffa500 8px 6px 5px; }
+    28% { box-shadow: #ffff00 8px 6px 5px; }
+    42% { box-shadow: #008000 8px 6px 5px; }
+    57% { box-shadow: #0000ff 8px 6px 5px; }
+    71% { box-shadow: #4b0082 8px 6px 5px; }
+    85% { box-shadow: #ee82ee 8px 6px 5px; }
+    100% { box-shadow: #ff0000 8px 6px 5px; }
+}

@@ -2,20 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Jersey 15';
 }
-
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
+    --glass-color: #ffffff;
 }
-
 [data-theme="dark"] {
     --bg-color: #000000;
     --text-color: #ffffff;
+    --glass-color: rgba(0, 0, 0, 0.5);
 }
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: 0.3s;
+}
+.main-h1 {
+    margin: 20px;
+    font-size: 10vw;
+    text-align: center;
 }

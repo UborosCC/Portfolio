@@ -15,6 +15,7 @@
     z-index: 1000;
 }
 .menu {
+    background-color: var(--bg-color);
     position: fixed;
     bottom: -100%; /* Start off-screen */
     left: 0;

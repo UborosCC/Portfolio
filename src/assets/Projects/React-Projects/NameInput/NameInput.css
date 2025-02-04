@@ -1,0 +1,18 @@
+.nameinput-main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.name-greeting {
+    margin: 30px;
+    font-size: 6vw;
+}
+.name-button {
+    cursor: pointer;
+}
+.name-input, .name-button{
+    padding: 10px;
+    font-size: 20px;
+}
