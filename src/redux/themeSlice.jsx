@@ -17,6 +17,5 @@ const themeSlice = createSlice({
     },
 });
 
-//exporterar toggleTheme och themeSlice.reducer
-export const { toggleTheme } = themeSlice.actions;
-export default themeSlice.reducer;
+export const { toggleTheme } = themeSlice.actions; //exporterar toggleTheme, för att senare bli anropa när theme ska ändras
+export default themeSlice.reducer; //exporterar våran reducer slice

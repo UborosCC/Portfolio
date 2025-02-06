@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit'; //importerar configureStore, 
 import { persistStore, persistReducer } from 'redux-persist';//importerar persistStore och persistReducer, för att hantera state persistance
 import themeReducer from './ThemeSlice';//importerar themeReducer 
 import userReducer from './UserSlice';//importerar userReducer
+import portfolioReducer from './PortfolioSlice';
 import storage from 'redux-persist/lib/storage';//importerar storage, det här är localStorage och används för att hålla fast state
 
 //Konfiguration på React Persist
@@ -13,11 +14,12 @@ const persistConfig = {
 //Bindar ihop persistConfig och userReducer runt persistReducer, userReducer sparar användarens namn, persistConfig berättar till React Persist att datan ska sparas hos localStorage och persistReducer ser till att datan ska sparas i localStorage
 const persistedUserReducer = persistReducer(persistConfig, userReducer); 
 
-//Konfiguration 
+//Store Konfiguration 
 export const store = configureStore({
     reducer: {
         user: persistedUserReducer, //Använder persistedReducer för att behålla data även efter en refresh
         theme: themeReducer, //Initierar Redux med themeReducer
+        portfolio: portfolioReducer, //Initierar Redux med portfolioReducer
     },
     middleware: (getDefaultMiddleware) => 
         getDefaultMiddleware({

@@ -25,6 +25,7 @@
     color: var(--text-color);
     padding: 10px;
     border-radius: 10px;
+    transition: 0.3s;
 }
 .contact-list a:hover {
     color: var(--reverse-color);

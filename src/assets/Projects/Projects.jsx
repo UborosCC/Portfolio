@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom"
-import "./Projects.css"
+import { useSelector } from 'react-redux'; //importerar useSelector, används till att accessera Redux store för att hämta användarens namn
+import { selectProjects } from '../../redux/PortfolioSlice'; //importerar selectProjects
+import ProjectList from './ProjectList'; //importerar ProjectList
 
 
 const Projects = () => {
-    return (
-        <>
-            <h1 className="main-h1">Projects</h1>
-            <Link to={"/cosmiccafe"} className="project-links">Cosmic Café [a HTML Project]</Link>
-            <Link to={"/nameinput"} className="project-links">React Projects</Link>
-        </>
-    )
+    const projects = useSelector(selectProjects); //projects hämtas från Redux store med useSelector
+    return <ProjectList projects={projects} />; //projects skickas som en prop vidare till ProjectList
 }
 
-export default Projects
+export default Projects;

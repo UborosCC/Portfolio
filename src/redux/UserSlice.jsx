@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';//importerar createSlice
 
-//Initial state: användar namnet starter som en blank string 
+//Initial state: användar namnet startar som en blank string 
 const initialState = {
     name: '', 
 };
@@ -17,6 +17,5 @@ const userSlice = createSlice ({
     },
 });
 
-//exporterar all action för att updatera namnet
-export const { setName } = userSlice.actions;
-export default userSlice.reducer;
+export const { setName } = userSlice.actions; //exporterar setName
+export default userSlice.reducer; //exporterar våran reducer slice

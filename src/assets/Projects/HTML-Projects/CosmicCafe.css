@@ -24,6 +24,7 @@
     background-color: #3a3737;
 }
 .nav-a {
+    cursor: pointer;
     font-size: 20px;
     vertical-align: middle;
     display: inline-block;
@@ -75,11 +76,11 @@
     background-color: rgba(0 ,0 ,0, 0.5);
     color: #ffffff;
     margin: 10vh;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
     border: #ffffff 5px double;
-    animation: neon 3s alternate ease-in-out infinite;
+    animation: neon 8s alternate ease-in-out infinite;
 }
 .welcome-txt h1, .welcome-txt h2 {
     padding: 50px 100px;

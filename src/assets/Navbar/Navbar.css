@@ -61,6 +61,7 @@
         flex-direction: row;
         border-top: none;
         border-bottom: #0051ff outset 5px;
+        transition: 0.3s;
     }
     .menu li {
         display: inline-block;
