@@ -1,0 +1,315 @@
+.cosmic-main {
+    background-image: url(Cafe/space.jpg);
+} /*Css kod, background image för hela sidan ^*/
+.cosmic-main h1, .cosmic-main h2, .cosmic-main h3, .cosmic-main li, .cosmic-main p, .cosmic-main a, .img-txt, .imgnumber {
+    font-family: Audiowide;
+}
+.cosmic-navbar {
+    position: relative;
+    background-size: cover;
+    height: 80px;
+    border-bottom: #ffffff double 3px;
+    text-align: center;
+    font-size: 0;
+} /*Navbar*/
+.logo {
+    height: 25px;
+    width: 25px;
+    box-sizing: content-box;
+    border: #faf326 1px solid;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-image: none;
+    padding: 12px;
+    background-color: #3a3737;
+}
+.nav-a {
+    font-size: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 15px 10px 15px;
+    background-color: transparent;
+}
+.nav-a:hover {
+    color: #fff700;
+    text-decoration: underline;
+}
+.nav-txt  {
+    border: 1px #faf326 solid;
+    padding: 10px 20px;
+}
+.left, .right {
+    background-color: transparent;
+    position: absolute;
+}
+.left {
+    left: 0;
+    bottom: 3%;
+}
+.right {
+    right: 0;
+    bottom: 3%;
+}
+.order {
+    padding: 10px 13px;
+    color: #000000;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid 3px;
+    border-color: #fff700;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.order:hover {
+    background-color: #faf326;
+    color: #000000;
+}
+.welcome-section {
+    height: 100%;
+    text-align: center;
+}
+.welcome-txt {
+    display: inline-block;
+    background-color: rgba(0 ,0 ,0, 0.5);
+    color: #ffffff;
+    margin: 10vh;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: #ffffff 5px double;
+    animation: neon 3s alternate ease-in-out infinite;
+}
+.welcome-txt h1, .welcome-txt h2 {
+    padding: 50px 100px;
+    background-color: rgba(0 ,0 ,0, 0.1);
+    border: solid #fff700 3px;
+}
+.welcome-txt h1 {
+    font-size: 8vw;
+    text-decoration: underline 1px #faf326;
+    border-bottom: none;
+    padding-bottom: 30px;
+}
+.welcome-txt h2 {
+    font-size: 30px;
+    border-top: none;
+    padding-top: 20px;
+}
+.cosmic-section {
+    text-align: center;
+    min-height: 100vh;
+}
+.cosmic-menu {
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    border: #ffffff double 3px;
+    min-width: 40vw;
+    min-height: 90vh;
+    margin: 20px;
+    text-align: center;
+}
+.cosmic-menu h2 {
+    margin-top: 20px;
+}
+.cosmic-img {
+    min-width: 50vw;
+}
+.drink-list, .food-list {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 15px 10px 15px;
+    padding: 0px 10px;
+}
+.food-list {
+    border: none;
+}
+.drink-list li, .food-list li {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #fff700;
+    padding-bottom: 5px;
+}
+.imgnumber, .img-txt {
+    display: block;
+}
+.imgnumber {
+    font-size: 2vw;
+    margin-bottom: 30px;
+}
+.img-txt {
+    font-size: 2vw;
+    margin: 60px 0 30px 0;
+}
+.next, .prev {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px #fff700 solid;
+    padding: 5px 15px;
+    margin: 0 10px 0 10px;
+}
+.cosmic-picture {
+    border: #fff700 solid 2px;
+    margin: 10px;
+    height: 55vh;
+    width: 35vw;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+.none {
+    display: none;
+} 
+/*animation för blinkande ljuset för welcome boxen*/
+@keyframes fade {
+    from {opacity: 0.2} 
+    to {opacity: 1}
+}
+@keyframes neon {
+    0%, 20%, 60%, 70%, 90% {box-shadow: 0 0 .2rem #ffffff,
+                      0 0 .2rem #ffffff,
+                      0 0 2rem #ffff00,
+                      0 0 0.8rem #ffff00,
+                      0 0 2.8rem #ffff00,
+                      inset 0 0 1.3rem #ffff00;}
+    40%, 50%, 80%, 100% {box-shadow: none;}
+}
+/*media för olika skärmar*/
+@media only screen and (max-width:400px) {
+    .cosmic-navbar {
+        height: 45px;
+    }
+    .logo {
+        height: 12px;
+        width: 12px;
+        padding: 8px;
+    }
+    .nav-a {
+        font-size: 6px;
+        margin: 5px;
+    }
+    .order {
+        margin-right: 10px;
+    }
+    .welcome-section {
+        margin-top: 10px;
+    }
+    .welcome-txt {
+        margin: 2vh;
+        padding: 10px;
+    }
+    .welcome-txt h1, .welcome-txt h2 {
+        padding: 50px 10px;
+    }
+    .welcome-txt h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .welcome-txt h2 {
+        font-size: 10px;
+        padding-top: 15px;
+    }
+    .cosmic-menu {
+        min-height: 1px;
+    }
+    .cosmic-menu h1 {
+        font-size: 15px;
+    }
+    .drink-list, .food-list {
+        margin: 10px 2px 10px 2px;
+        padding: 4px 10px;
+    }
+    .drink-list h2, .food-list h2 {
+        font-size: 12px;
+    }
+    .drink-list li, .food-list li {
+        font-size: 10px;
+        padding: 0;
+    }
+    .menu-img {
+        min-height: 10px;
+        width: 320px;
+    }
+    .img-txt {
+        font-size: 5vw;
+    }
+    .cosmic-picture {
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 410px) and (max-width:720px) {
+    .cosmic-navbar {
+        height: 50px;
+    }
+    .logo {
+        height: 10px;
+        width: 10px;
+    }
+    .nav-a {
+        font-size: 8px;
+        margin: 5px;
+    }
+    .order {
+        margin-right: 25px;
+    }
+    .welcome-section {
+        margin-top: 10px;
+    }
+    .welcome-txt {
+        margin: 2vh;
+        padding: 10px;
+    }
+    .welcome-txt h1, .welcome-txt h2 {
+        padding: 50px 10px;
+    }
+    .welcome-txt h1 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .welcome-txt h2 {
+        font-size: 10px;
+        padding-top: 15px;
+    }
+    .cosmic-menu {
+        min-height: 20px;
+    }
+    .drink-list, .food-list {
+        margin: 10px 3px 10px 3px;
+        padding: 10px 15px;
+    }
+    .drink-list h2, .food-list h2 {
+        font-size: 12px;
+    }
+    .drink-list li, .food-list li {
+        font-size: 10px;
+        padding: 0;
+    }
+    .cosmic-img {
+        min-height: 10px;
+        width: 390px;
+        padding: 20px;
+    }
+    .img-txt {
+        font-size: 2vw;
+        margin: 20px 0;
+    }
+    .cosmic-picture {
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+    }
+    .prev, .next {
+        font-size: 2vw;
+    }
+}

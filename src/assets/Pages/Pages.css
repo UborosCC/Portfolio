@@ -1,0 +1,42 @@
+.page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-h2 {
+    margin: 10px 0 20px 0;
+    font-size: 5vw;
+}
+.about-p {
+    font-size: 2vw;
+    margin: 20px 20px;
+    min-width: 200px;
+    max-width: 1400px;
+}
+.contact-ul {
+    list-style: none;
+}
+.contact-list {
+    margin: 20px;
+    font-size: 2vw;
+}
+.contact-list a {
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-list a:hover {
+    color: var(--reverse-color);
+    background-color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .main-h2 {
+        font-size: 3vw;
+    }
+    .main-p {
+        margin: 10px;
+        font-size: 1.5vw;
+    }
+}

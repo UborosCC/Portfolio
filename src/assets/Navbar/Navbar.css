@@ -15,9 +15,9 @@
     z-index: 1000;
 }
 .menu {
-    background-color: var(--bg-color);
+    background-color: var(--reverse-color);
     position: fixed;
-    bottom: -100%; /* Start off-screen */
+    bottom: -100%; 
     left: 0;
     width: 100%;
     padding: 20px 0;
@@ -71,6 +71,10 @@
         border: outset 5px;
         border-color: var(--text-color);
         border-radius: 5px;
+    }
+    .active {
+        border-color: #0051ff;
+        color: #0051ff;
     }
     .nav-link:hover {
         text-decoration: underline;

@@ -1,7 +1,7 @@
 .color-h1 {
     margin: 2rem;
     padding: 1.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--reverse-color);
     color: var(--text-color);
     font-size: 45px;
     border: var(--text-color) double 5px;
@@ -10,7 +10,7 @@
 .color-button {
     cursor: pointer;
     padding: 1rem 1.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--reverse-color);
     color: var(--text-color);
     font-size: 10vw;
     border: var(--text-color) double 5px;

@@ -5,17 +5,17 @@
     left: 0;
     padding: 25px;
     font-size: 20px;
-    background-color: var(--bg-color);
+    background-color: var(--reverse-color);
     color: var(--text-color);
     border: none;
     border-bottom-right-radius: 5px;
 }
 .back-button:hover {
     background-color: var(--text-color);
-    color: var(--bg-color);
+    color: var(--reverse-color);
 }
 .greeting-section {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .greeting-section {
+        height: 90vh;
+    }
     .greeting-link, .greeting-h2 {
         font-size: 2vw;
     }

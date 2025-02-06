@@ -5,22 +5,27 @@
     font-family: 'Jersey 15';
 }
 :root {
-    --bg-color: #ffffff;
+    --bg-color: linear-gradient(#ffffff, #84d3ed);
     --text-color: #000000;
+    --reverse-color: #ffffff;
     --glass-color: #ffffff;
 }
 [data-theme="dark"] {
-    --bg-color: #000000;
+    --bg-color: linear-gradient(#000000, rgb(0, 3, 81));
     --text-color: #ffffff;
+    --reverse-color: #000000;
     --glass-color: rgba(0, 0, 0, 0.5);
 }
 body {
-    background-color: var(--bg-color);
+    background: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-image: var(--bg-color);
     color: var(--text-color);
     transition: 0.3s;
 }
 .main-h1 {
-    margin: 20px;
-    font-size: 10vw;
+    margin: 30px 0;
+    font-size: 6vw;
     text-align: center;
 }
