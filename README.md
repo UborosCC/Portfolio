@@ -3,21 +3,33 @@ Min Portfolio
 Det här är Alex och den här är min portfolio, skapat under min Front-End utbildning inom Javascript 2 kursen som examinationsuppgift. Jag har tänkt att fortsätta bygga på denna sidan även efter examinationen och förbättra den med nya kunskaper jag får med under utbildningen.
 
 Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux Persist med Vite.js
----
+
 Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist
 
 Funktioner, Hooks och Komponenter som har använts:
 ---
+React:
+---
 React Hooks - useEffect, useState, useRef
 
+React-Router-Dom:
+---
 React-Router-Dom Hooks - useNavigate, useLocation
+
 React-Router-Dom Komponenter - HashRouter, Link, Routes, Route
 
+React-Redux:
+---
 React-Redux Funktioner - createSlice(), configureStore(), 
+
 React-Redux Hooks - useSelector, useDispatch
+
 React-Redux Komponenter - Provider
 
+Redux-Persist:
+---
 Redux-Persist Funktioner - persistStore(), persistReducer()
+
 Redux-Persist Komponenter - PersistGate
 
 Beskrivning av funktionerna, hooks och komponenterna:
