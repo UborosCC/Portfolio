@@ -2,7 +2,7 @@ Min Portfolio
 ---
 Det här är Alex och den här är min portfolio, skapat under min Front-End utbildning inom Javascript 2 kursen som examinationsuppgift. Jag har tänkt att fortsätta bygga på denna sidan även efter examinationen och förbättra den med nya kunskaper jag får med under utbildningen.
 
-Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux Persist med Vite.js. Portfolion är också skapad med hjälp av AI samt video tutorials från Fireship, Bro Code, Programming with Mosh och Cosden Solutions.
+Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux Persist med Vite.js. Portfolion är också skapad med hjälp av AI som chatGPT samt video tutorials från Fireship, Bro Code, Programming with Mosh och Cosden Solutions.
 
 Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist, gh-pages
 
