@@ -7,11 +7,11 @@ const initialState = {
   ],
 };
 
-const portfolioSlice = createSlice({
-  name: 'portfolio',
+const projectSlice = createSlice({
+  name: 'project',
   initialState,
   reducers: {},
 }); //Skapar en portfolio slice
 
-export const selectProjects = (state) => state.portfolio.projects; //Funktion som används för att hämta projects från våran state
-export default portfolioSlice.reducer; //exporterar våran reducer slice
+export const selectProjects = (state) => state.project.projects; //Funktion som används för att hämta projects från våran state
+export default projectSlice.reducer; //exporterar våran reducer slice

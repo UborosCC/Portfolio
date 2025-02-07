@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'; //importerar useSelector, används till att accessera Redux store för att hämta användarens namn
-import { selectProjects } from '../../redux/PortfolioSlice'; //importerar selectProjects
+import { selectProjects } from '../../redux/ProjectSlice'; //importerar selectProjects
 import ProjectList from './ProjectList'; //importerar ProjectList
 
 

@@ -6,7 +6,7 @@ Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux 
 
 Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist
 
-Funktioner, Hooks och Komponenter som har använts
+Funktioner, Hooks och Komponenter som har använts:
 ---
 React
 ---
@@ -42,13 +42,16 @@ useEffect har använts för att köra och hantera biverkningar vid sidan. Som re
 
 useRef använder jag hos Timer och den använts där för att lagra timer id samt stoppa onödiga omrenderingar.
 
-useLocation, useNavigation, Routing
+Navbar (useLocation, useNavigation, Routing)
 ---
+Navbar sitter längst upp på varje sida och används för att navigera mellan alla pages
+
 useLocation använder jag för att hålla active class beroende på vilken page man är i.
 
 useNavigation och Link hjälper till att göra navigationen mellan Routes smidigare.
 
-Jag har skapat routing mellan alla sidor inom App.jsx med hjälp av Routes och Route.
+Jag har skapat routing mellan alla pages inom App.jsx med hjälp av Routes och Route.
+
 
 HashRouter
 ---
@@ -57,6 +60,10 @@ HashRouter används istället för BrowserRouter, jag är fortfarande inte rikti
 Redux store
 ---
 createSlice() samt configureStore() har använts i store samt all slice filer, createSlice för att skapa slices för våran Redux store och configureStore för att skapa en Redux store. persistStore() används i store för att aktivera persistence inom våran Redux store.
+
+Project props
+---
+Jag har skapat en lista med props inom Redux store som sparas globalt. Props används i Project och sedan skickas vidare till ProjectList och ProjectItem, Projects -> ProjectList -> ProjectItem. Det här funkar med hjälp av useSelector samt en funktion jag skapade hos ProjectSlice.
 
 useSelector och useDispatch
 ---
@@ -67,5 +74,3 @@ Redux-Persist
 Provider används i main.jsx för att binda mellan app, så att ge app tillgång till våran Redux store. Medans PersistGate används i main.jsx för att dröja ner renderingar tills persisted state har laddat klart.
 
 persistReducer() används för att lagra data och hålla fast det inom en localStorage. Det gör att datan inte försvinner mellan refresh. Jag använder det hos Greeting för att spara användarens namn.
-
-
