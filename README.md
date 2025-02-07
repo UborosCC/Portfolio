@@ -1,13 +1,13 @@
 Min Portfolio 
 ---
 Det här är Alex och den här är min portfolio, skapat under min Front-End utbildning inom Javascript 2 kursen som examinationsuppgift. Jag har tänkt att fortsätta bygga på denna sidan även efter examinationen och förbättra den med nya kunskaper jag får med under utbildningen.
----
+
 Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux Persist med Vite.js
-
-Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist
 ---
-Funktioner, Hooks och Komponenter som har använts:
+Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist
 
+Funktioner, Hooks och Komponenter som har använts:
+---
 React Hooks - useEffect, useState, useRef
 
 React-Router-Dom Hooks - useNavigate, useLocation
@@ -19,6 +19,8 @@ React-Redux Komponenter - Provider
 
 Redux-Persist Funktioner - persistStore(), persistReducer()
 Redux-Persist Komponenter - PersistGate
+
+Beskrivning av funktionerna, hooks och komponenterna:
 ---
 Jag har använt useState för att hantera state variabler och data, som hos Color för memory spelet och Navbar för mobil meny delen. 
 
@@ -41,5 +43,5 @@ useSelector och useDispatch har använts vid samband med våran store. useSelect
 Provider används i main.jsx för att binda mellan app, så att ge app tillgång till våran Redux store. Medans PersistGate används i main.jsx för att dröja ner renderingar tills persisted state har laddat klart.
 
 persistReducer() används för att lagra data och hålla fast det inom en localStorage. Det gör att datan inte försvinner mellan refresh. Jag använder det hos Greeting för att spara användarens namn.
----
+
 
