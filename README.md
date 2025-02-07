@@ -4,7 +4,9 @@ Det här är Alex och den här är min portfolio, skapat under min Front-End utb
 
 Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux Persist med Vite.js
 
-Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist
+Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist, gh-pages
+
+Kommando som har använts: npm run dev (för att starta en local host server), npm run deploy (för att skapa Github Page), git add . (tillägga förändringar till staging area), git commit -m "" (göra en commit), git push (pusha commitsen till github repo:n)
 
 Funktioner, Hooks och Komponenter som har använts:
 ---
