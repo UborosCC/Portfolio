@@ -48,7 +48,7 @@ useLocation använder jag för att hålla active class beroende på vilken page 
 
 useNavigation och Link hjälper till att göra navigationen mellan Routes smidigare.
 
-Jag har skapat routing inom App.jsx med hjälp av Routes och Route.
+Jag har skapat routing mellan alla sidor inom App.jsx med hjälp av Routes och Route.
 
 HashRouter
 ---
