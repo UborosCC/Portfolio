@@ -8,17 +8,17 @@ Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolk
 
 Funktioner, Hooks och Komponenter som har använts
 ---
-React:
+React
 ---
 React Hooks - useEffect, useState, useRef
 
-React-Router-Dom:
+React-Router-Dom
 ---
 React-Router-Dom Hooks - useNavigate, useLocation
 
 React-Router-Dom Komponenter - HashRouter, Link, Routes, Route
 
-React-Redux:
+React-Redux
 ---
 React-Redux Funktioner - createSlice(), configureStore(), 
 
@@ -26,7 +26,7 @@ React-Redux Hooks - useSelector, useDispatch
 
 React-Redux Komponenter - Provider
 
-Redux-Persist:
+Redux-Persist
 ---
 Redux-Persist Funktioner - persistStore(), persistReducer()
 
