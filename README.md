@@ -6,7 +6,7 @@ Portfolion är skapad med hjälp av React, React Router, React Redux samt Redux 
 
 Paket som har installerat: vite@latest + react, react-router-dom, @reduxjs/toolkit react-redux, redux-persist
 
-Funktioner, Hooks och Komponenter som har använts:
+Funktioner, Hooks och Komponenter som har använts
 ---
 React:
 ---
