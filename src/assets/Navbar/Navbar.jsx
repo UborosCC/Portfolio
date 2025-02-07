@@ -31,19 +31,16 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar $(isDesktop ? 'desktop' : 'mobile')`}> 
-        {!isDesktop && (
-            <button onClick={() => setIsOpen(!isOpen)} className='menu-button'>{isOpen ? "X" : "⚌"}</button>
-        )}
-        <article className={`menu ${isOpen ? "open" : ""}`}>
-            <ul>
-              <li><Link to={'/'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>Home</Link></li>
-              <li><Link to={'/about'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/about" ? "active" : ""}`}>About Me</Link></li>
-              <li><Link to={'/projects'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/projects" ? "active" : ""}`}>Projects</Link></li>
-              <li><Link to={'/contact'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}>Contact</Link></li>
-              <button className='theme-button' onClick={() => dispatch(toggleTheme())}><img className='theme-icon' src={theme === 'light' ? sunIcon : moonIcon}  alt={theme === 'light' ? 'Sun' : 'Moon'} />
-            </button>
-            </ul>
-        </article>
+            {!isDesktop && (<button onClick={() => setIsOpen(!isOpen)} className='menu-button'>{isOpen ? "X" : "⚌"}</button>)}
+            <article className={`menu ${isOpen ? "open" : ""}`}>
+                <ul>
+                    <li><Link to={'/'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>Home</Link></li>
+                    <li><Link to={'/about'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/about" ? "active" : ""}`}>About Me</Link></li>
+                    <li><Link to={'/projects'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/projects" ? "active" : ""}`}>Projects</Link></li>
+                    <li><Link to={'/contact'} onClick={() => setIsOpen(false)} className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}>Contact</Link></li>
+                    <button className='theme-button' onClick={() => dispatch(toggleTheme())}><img className='theme-icon' src={theme === 'light' ? sunIcon : moonIcon}  alt={theme === 'light' ? 'Sun' : 'Moon'} /></button>
+                </ul>
+            </article>
         </nav>
     );
 };

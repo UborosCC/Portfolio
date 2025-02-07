@@ -120,7 +120,7 @@ const CosmicCafe = () => {
           </section>
         </section>
       </main>
-      );
+    );
 };
 
 export default CosmicCafe;
