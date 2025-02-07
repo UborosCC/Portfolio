@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'; //importerar useState och useEffect, useState hanterar state variabler, useEffect kör sid effekter
-import { useSelector, useDispatch } from 'react-redux'; //importerar useSelector och useDispatch
+import { useEffect, useState } from 'react'; //importerar useState och useEffect, useState hanterar state variabler, useEffect hanterar biverkningar
+import { useSelector, useDispatch } from 'react-redux'; //importerar useSelector och useDispatch, useSelector extrahera data från våran store, useDispatch för att skicka actions och uppdatera states
 import { Link, useLocation } from 'react-router-dom'; //importerar Link och useLocation
 import { toggleTheme } from '../../redux/ThemeSlice'; //importerar toggleTheme
 import './Navbar.css' //importerar Navbar.css
@@ -11,7 +11,7 @@ const Navbar = () => {
     const location = useLocation(); //Används för att hålla fast active class på Link
     const [isOpen, setIsOpen] = useState(false); //Används för att hålla koll om något är öppet eller inte, useState(false) eftersom den ska börja stängd
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768); //Håller koll om skärmen är minst 768px på width
-    const theme = useSelector((state) => state.theme.theme); //Hämtar theme från Redux
+    const theme = useSelector((state) => state.theme.theme); //Hämtar theme från Redux store
     const dispatch = useDispatch(); //Används för att växla mellan 'light' och 'dark' theme
 
     //Byter data-theme till 'light' eller 'dark' beroende på vilken den har växlat till

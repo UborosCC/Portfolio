@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'; //importerar useState och useEffect, useState hanterar state variabler, useEffect kör sid effekter som att starta och preperera spelet 
+import { useState, useEffect } from 'react'; //importerar useState och useEffect, useState hanterar state variabler, useEffect kör biverkningar som att starta och preperera spelet 
 import { useNavigate } from 'react-router-dom'; //importerar useNavigate, hjälper oss att navigera mellan sidor
 import './Color.css'; //importerar Color.css
 import Card from './Card';
@@ -6,7 +6,7 @@ import Header from './Header'; //importerar jsx filer
 
 const Color = () => {
   const navigate = useNavigate(); //Hjälper till att navigera mellan sidor
-  const [cards, setCards] = useState([]); //Memory korter, har en color och id property
+  const [cards, setCards] = useState([]); //Håller koll på Memory korter, har en color och id property
   const [flippedCards, setFlippedCards] = useState([]); //Håller koll på vilka kort som är uppvänd, högst två korter får vara uppvänt samtidigt 
   const [matchedCards, setMatchedCards] = useState([]); //Håller koll på alla kort som har matchat
 
